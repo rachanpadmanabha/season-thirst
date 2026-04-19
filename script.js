@@ -1,5 +1,43 @@
 // ============ Season's Thirst — interactions ============
 
+// ---------- Loader: wait for all videos to be ready ----------
+(function initLoader() {
+  const loader = document.getElementById('loaderScreen');
+  const lottieContainer = document.getElementById('loaderLottie');
+
+  if (lottieContainer && typeof lottie !== 'undefined') {
+    lottie.loadAnimation({
+      container: lottieContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'Walking Orange.json',
+    });
+  }
+
+  const videos = Array.from(document.querySelectorAll('video'));
+  if (!videos.length) { loader?.classList.add('hidden'); return; }
+
+  let loaded = 0;
+  const total = videos.length;
+
+  function checkDone() {
+    loaded++;
+    if (loaded >= total) {
+      loader?.classList.add('hidden');
+    }
+  }
+
+  videos.forEach(v => {
+    if (v.readyState >= 3) { checkDone(); return; }
+    v.addEventListener('canplaythrough', checkDone, { once: true });
+    v.addEventListener('error', checkDone, { once: true });
+  });
+
+  // Safety timeout — don't block forever
+  setTimeout(() => loader?.classList.add('hidden'), 10000);
+})();
+
 const T = window.__TWEAKS || { season: 'monsoon', accent: '#E8A33D', petals: 18, cursor: 'on' };
 
 // ---------- Petals (subtle, reduced) ----------
