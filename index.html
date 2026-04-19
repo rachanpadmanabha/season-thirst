@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Season's Thirst — Seasonal fruits, turned into drinks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Work+Sans:wght@300;400;500&family=Caveat:wght@500;600&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-season="monsoon">
+
+<!-- Custom cursor -->
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">Season's Thirst<span style="color: var(--hibiscus);">.</span></div>
+  <div class="nav-links">
+    <a href="#philosophy">Philosophy</a>
+    <a href="#spotlight">In Season</a>
+    <a href="#lineup">Lineup</a>
+    <a href="#why">Why Seasonal</a>
+    <a href="#notify">Notify Me</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" data-section="hero">
+  <div class="hero-video-bg">
+    <video src="uploads/Whisk_e2y4ctzjntzwuwy10sz3imytewy2qtl4cdzk1sz.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <div class="hero-video-overlay"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-flourish">
+      <svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M4 12 Q 12 4, 24 12 T 44 12" stroke-linecap="round"/>
+        <circle cx="24" cy="12" r="1.5" fill="currentColor"/>
+      </svg>
+    </div>
+    <h1 class="hero-title">
+      <span class="word">Season's</span> <span class="word">Thirst</span>
+    </h1>
+    <p class="hero-sub">
+      Seasonal fruits and flowers, turned into hydrating drinks<br>
+      that are good for your body and better for your soul.
+    </p>
+    <div class="hero-cta">
+      <a href="#spotlight" class="btn-pill">
+        Explore the Season
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="scroll-hint"><span class="line"></span> Scroll to taste</div>
+    <div>Est. <span class="serif" style="font-style: italic;">2024</span> · Bombay · Bengaluru</div>
+  </div>
+</section>
+
+<div class="hero-petals" id="petals"></div>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="philosophy" id="philosophy" data-section="philosophy">
+  <div class="container">
+    <div class="philo-grid">
+      <div class="philo-copy">
+        <div class="section-label">
+          <span class="dot"></span>
+          <span class="eyebrow">Our Philosophy — 01</span>
+        </div>
+        <h2 class="reveal-up">
+          Nature keeps a <em>calendar</em>.<br>
+          We simply follow it.
+        </h2>
+        <p class="reveal-up">
+          Every fruit, flower, and herb has a moment — a handful of weeks when its flavor is deepest, its nutrients most concentrated, its aroma most alive. Cold storage and year-round availability have made us forget this.
+        </p>
+        <p class="reveal-up">
+          Season's Thirst is an act of remembering. We source within 90 days of harvest, press within 48 hours, and bottle without pretense. What isn't in season, simply isn't on the shelf.
+        </p>
+        <div class="signature reveal-up">— the founders</div>
+      </div>
+
+      <figure class="philo-media reveal-up">
+        <video src="img/pour1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <figcaption class="photo-tag">Monsoon press · Konkan coast</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPOTLIGHT ============ -->
+<section class="spotlight" id="spotlight" data-section="spotlight">
+  <div class="container">
+    <div class="spot-head reveal-up">
+      <h2>
+        <span class="script-accent">In Season Now —</span><br>
+        The Monsoon<br>Collection
+      </h2>
+      <div class="season-chip">
+        <span class="dot"></span>
+        July — September
+      </div>
+    </div>
+
+    <div class="spot-grid">
+      <article class="spot-card reveal-up" style="--card-tint: #C13B4C;">
+        <div class="bg-grad"><div class="can-silhouette"></div></div>
+        <div class="meta">
+          <h3>Hibiscus Rose</h3>
+          <span class="idx">001 / 03</span>
+        </div>
+        <p class="ings"><em>Hibiscus</em>, damask rose petals, lime leaf, pink peppercorn.</p>
+        <p class="benefit">Cooling. Iron-rich. Antioxidant.</p>
+      </article>
+
+      <article class="spot-card reveal-up" style="--card-tint: #4A1E3A;">
+        <div class="bg-grad"><div class="can-silhouette"></div></div>
+        <div class="meta">
+          <h3>Jamun Kala&nbsp;Namak</h3>
+          <span class="idx">002 / 03</span>
+        </div>
+        <p class="ings"><em>Java plum</em>, black salt, green chilli, fresh mint.</p>
+        <p class="benefit">Digestive. Grounding. Sharp.</p>
+      </article>
+
+      <article class="spot-card reveal-up" style="--card-tint: #E8A33D;">
+        <div class="bg-grad"><div class="can-silhouette"></div></div>
+        <div class="meta">
+          <h3>Kokum Curry&nbsp;Leaf</h3>
+          <span class="idx">003 / 03</span>
+        </div>
+        <p class="ings"><em>Kokum</em>, fresh curry leaf, jaggery, ginger.</p>
+        <p class="benefit">Heat-soothing. Gut-kind. Tart.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LINEUP ============ -->
+<section class="lineup" id="lineup" data-section="lineup">
+  <div class="container">
+    <div class="lineup-head">
+      <div>
+        <div class="section-label">
+          <span class="dot"></span>
+          <span class="eyebrow">The Full Lineup — 02</span>
+        </div>
+        <h2 class="reveal-up">Twelve drinks.<br>One at a time.</h2>
+      </div>
+      <div class="lineup-filters reveal-up">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="monsoon">Monsoon</button>
+        <button class="filter-chip" data-filter="winter">Winter</button>
+        <button class="filter-chip" data-filter="spring">Spring</button>
+        <button class="filter-chip" data-filter="summer">Summer</button>
+      </div>
+    </div>
+
+    <div class="lineup-grid" id="lineupGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY SEASONAL ============ -->
+<section class="why" id="why" data-section="why">
+  <div class="container">
+    <div class="why-head">
+      <div>
+        <div class="section-label">
+          <span class="dot"></span>
+          <span class="eyebrow">Why Seasonal — 03</span>
+        </div>
+        <h2 class="reveal-up">Four reasons,<br>one good habit.</h2>
+      </div>
+      <p class="reveal-up">Seasonal eating isn't a wellness trend. It's what every culture did, everywhere, before we decided mangoes should be available in January.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item reveal-up">
+        <span class="num">01</span>
+        <div class="why-icon">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="40" cy="44" r="18"/>
+            <path d="M40 26 Q 43 18, 48 16 Q 42 18, 40 26" fill="currentColor" opacity=".4"/>
+            <line x1="40" y1="10" x2="40" y2="18" stroke-linecap="round"/>
+            <line x1="20" y1="20" x2="26" y2="26" stroke-linecap="round"/>
+            <line x1="60" y1="20" x2="54" y2="26" stroke-linecap="round"/>
+            <line x1="12" y1="44" x2="20" y2="44" stroke-linecap="round"/>
+            <line x1="60" y1="44" x2="68" y2="44" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Peak nutrients</h4>
+        <p>A tomato picked in July has twice the lycopene of one grown under lamps in February.</p>
+      </div>
+
+      <div class="why-item reveal-up">
+        <span class="num">02</span>
+        <div class="why-icon">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M40 66 Q 18 50, 22 28 Q 40 14, 58 28 Q 62 50, 40 66 Z"/>
+            <path d="M40 66 L 40 26" stroke-linecap="round"/>
+            <path d="M40 42 L 28 34 M 40 50 L 52 42 M 40 34 L 30 28 M 40 38 L 50 32" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>No cold storage</h4>
+        <p>Freshly pressed means no weeks in refrigerated holds, no oxidation, no flavor compromise.</p>
+      </div>
+
+      <div class="why-item reveal-up">
+        <span class="num">03</span>
+        <div class="why-icon">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M14 54 Q 20 46, 30 48 L 50 48 Q 60 46, 66 54 L 66 64 Q 40 70, 14 64 Z"/>
+            <circle cx="32" cy="36" r="6"/>
+            <circle cx="42" cy="32" r="5"/>
+            <circle cx="50" cy="38" r="6"/>
+            <path d="M30 30 Q 32 24, 34 28 M 42 26 Q 44 22, 46 26 M 50 32 Q 52 26, 54 30" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Supports local farmers</h4>
+        <p>85% of our produce comes from small growers within a 200km radius of our press.</p>
+      </div>
+
+      <div class="why-item reveal-up">
+        <span class="num">04</span>
+        <div class="why-icon">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="40" cy="40" r="22"/>
+            <path d="M40 18 A 22 22 0 0 1 40 62 A 14 14 0 0 0 40 18 Z" fill="currentColor" opacity=".15"/>
+            <circle cx="30" cy="34" r="2" fill="currentColor"/>
+            <circle cx="50" cy="46" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <h4>In harmony with your body</h4>
+        <p>Cooling fruits in summer, warming roots in winter. Ayurveda and your grandmother agreed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JUICE SHOWCASE ============ -->
+<section class="juice-showcase" id="social" data-section="social">
+  <div class="juice-panels" id="juicePanels">
+
+    <div class="juice-panel" data-juice="strawberry" data-idx="0">
+      <div class="panel-bg"></div>
+      <img class="panel-bottle" src="uploads/a 1.png" alt="Strawberry Red bottle">
+      <div class="panel-info">
+        <span class="panel-num">01</span>
+        <h3 class="panel-name">Strawberry Red</h3>
+        <p class="panel-flavor">Guava Flavor</p>
+        <button class="panel-btn" data-target="0">
+          <span>View more</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="juice-panel" data-juice="green" data-idx="1">
+      <div class="panel-bg"></div>
+      <img class="panel-bottle" src="uploads/b 1.png" alt="Green Smoothie bottle">
+      <div class="panel-info">
+        <span class="panel-num">02</span>
+        <h3 class="panel-name">Green Smoothie</h3>
+        <p class="panel-flavor">Guava Flavor</p>
+        <button class="panel-btn" data-target="1">
+          <span>View more</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="juice-panel" data-juice="falsaa" data-idx="2">
+      <div class="panel-bg"></div>
+      <img class="panel-bottle" src="uploads/c 1.png" alt="Black Falsaa bottle">
+      <div class="panel-info">
+        <span class="panel-num">03</span>
+        <h3 class="panel-name">Black Falsaa</h3>
+        <p class="panel-flavor">Guava Flavor</p>
+        <button class="panel-btn" data-target="2">
+          <span>View more</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="juice-panel" data-juice="mango" data-idx="3">
+      <div class="panel-bg"></div>
+      <img class="panel-bottle" src="uploads/d 1.png" alt="Mango Yellow bottle">
+      <div class="panel-info">
+        <span class="panel-num">04</span>
+        <h3 class="panel-name">Mango Yellow</h3>
+        <p class="panel-flavor">Guava Flavor</p>
+        <button class="panel-btn" data-target="3">
+          <span>View more</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Single shared detail overlay — no panel swapping, just property transitions -->
+  <div class="juice-detail-overlay" id="juiceDetail">
+    <div class="detail-bg-text" id="detailBgText"></div>
+    <div class="detail-bottles">
+      <img class="detail-bottle detail-bottle-current" id="detailBottleCur" src="" alt="">
+      <img class="detail-bottle detail-bottle-next" id="detailBottleNext" src="" alt="">
+    </div>
+    <div class="detail-content" id="detailContent">
+      <h2 class="detail-flavor-name" id="detailFlavor"></h2>
+      <p class="detail-desc" id="detailDesc"></p>
+    </div>
+    <div class="detail-nav">
+      <button class="detail-arrow detail-prev" id="detailPrev" aria-label="Previous juice">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      </button>
+      <span class="detail-counter" id="detailCounter"></span>
+      <button class="detail-arrow detail-next" id="detailNext" aria-label="Next juice">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <button class="detail-close" id="detailClose" aria-label="Close">&times;</button>
+  </div>
+</section>
+
+<!-- ============ FOOTER / EMAIL ============ -->
+<section class="footer" id="notify" data-section="notify">
+  <div class="footer-inner">
+    <svg class="footer-flourish" width="72" height="24" viewBox="0 0 72 24" fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M4 12 Q 18 4, 36 12 T 68 12" stroke-linecap="round"/>
+      <circle cx="36" cy="12" r="2" fill="currentColor"/>
+      <path d="M32 8 Q 34 4, 36 8 M 36 8 Q 38 4, 40 8" stroke-linecap="round" opacity=".7"/>
+    </svg>
+    <h2>Be the first to know what's <em>in season</em>.</h2>
+
+    <form class="email-form" onsubmit="event.preventDefault(); this.querySelector('button').innerHTML='Noted · ✓';">
+      <input type="email" placeholder="your.name@kitchen.com" required>
+      <button type="submit">Notify Me <span>→</span></button>
+    </form>
+
+    <div class="footer-bot">
+      <div class="tagline">Seasonal. Honest. Alive.</div>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <span style="opacity:.5;">·</span>
+        <a href="#">hello@seasonsthirst.in</a>
+        <span style="opacity:.5;">·</span>
+        <a href="#">Stockists</a>
+      </div>
+      <div class="mono" style="font-size: 11px; opacity: .6;">© 2026 Season's Thirst</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWEAKS ============ -->
+<div class="tweaks" id="tweaksPanel">
+  <h4>Tweaks</h4>
+  <label>
+    <span>Current Season</span>
+    <select id="seasonSelect">
+      <option value="monsoon">Monsoon (crimson)</option>
+      <option value="winter">Winter (jamun)</option>
+      <option value="spring">Spring (basil)</option>
+      <option value="summer">Summer (amber)</option>
+    </select>
+  </label>
+  <label>
+    <span>Accent Color</span>
+    <div class="swatch-row" id="accentSwatches">
+      <button class="sw active" data-accent="#E8A33D" style="background:#E8A33D"></button>
+      <button class="sw" data-accent="#C13B4C" style="background:#C13B4C"></button>
+      <button class="sw" data-accent="#4A1E3A" style="background:#4A1E3A"></button>
+      <button class="sw" data-accent="#6B8E4E" style="background:#6B8E4E"></button>
+      <button class="sw" data-accent="#E89FA3" style="background:#E89FA3"></button>
+    </div>
+  </label>
+  <label>
+    <span>Petal density</span>
+    <input type="range" id="petalCount" min="0" max="40" value="18">
+  </label>
+  <label>
+    <span>Cursor trail</span>
+    <select id="cursorMode">
+      <option value="on">Water droplets</option>
+      <option value="off">Off</option>
+    </select>
+  </label>
+</div>
+
+<script>
+  // Tweak defaults — persisted by host
+  window.__TWEAKS = /*EDITMODE-BEGIN*/{
+    "season": "winter",
+    "accent": "#C13B4C",
+    "petals": 45,
+    "cursor": "off"
+  }/*EDITMODE-END*/;
+</script>
+<script src="script.js"></script>
+</body>
+</html>
